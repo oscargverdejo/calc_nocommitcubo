@@ -18,6 +18,17 @@ function cubo() {
 	num.value = num.value * num.value * num.value;
 }
 
+function raiz(){
+	var num = document.getElementById("n1");
+	if(isNaN(num.value) || num.value<0){
+		num.value = "Error";
+	}
+	else{
+		num.value = Math.sqrt(num.value);
+	}
+	
+}
+
 </script>
 </head>
 <body>
@@ -27,6 +38,7 @@ function cubo() {
 	<p>
 	<button onclick="cuadrado()">x<sup>2</sup></button>
 	<button onclick="cubo()">x<sup>3</sup></button>
+	<button onclick="raiz()">sqrt(x)</button>
 	</p>
 </body>
 </html>
